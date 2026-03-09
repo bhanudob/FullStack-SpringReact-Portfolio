@@ -19,9 +19,15 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.0.2'
+    // ✅ Use jjwt 0.12.x — cleaner API, no deprecated methods
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
+    runtimeOnly   'io.jsonwebtoken:jjwt-impl:0.12.3'
+    runtimeOnly   'io.jsonwebtoken:jjwt-jackson:0.12.3'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 }
 
