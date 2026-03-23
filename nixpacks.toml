@@ -2,4 +2,4 @@
 cmds = ["./gradlew build -x test"]
 
 [start]
-cmd = "java -jar build/libs/*.jar"
+cmd = "java -jar build/libs/cardatabase-0.0.1-SNAPSHOT.jar"
